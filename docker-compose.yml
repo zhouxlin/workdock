@@ -1,0 +1,27 @@
+version: "3"
+
+networks: 
+  backend:
+    driver: bridge
+
+services:
+  php-fpm: 
+    image: php:fpm
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "9000:9000"
+    networks:
+      - backend
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - backend
+
