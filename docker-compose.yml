@@ -11,6 +11,8 @@ services:
       - ./www:/var/www/html
     ports:
       - "9000:9000"
+    depends_on:
+      - nginx
     networks:
       - backend
 
@@ -22,6 +24,16 @@ services:
     volumes:
       - ./www:/var/www/html
       - ./nginx/conf.d:/etc/nginx/conf.d
+      - nginx_log:/var/log/nginx
     networks:
       - backend
+  mysql: 
+    image: mysql:8.0.36-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql_data:/var/lib/mysql
 
+volumes:
+  nginx_log: ./log/nginx
+  mysql_data: ./data/mysql
