@@ -24,7 +24,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./www:/var/www/html
+      - ./www:/var/www/
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./log/nginx:/var/log/nginx
     networks:
@@ -38,3 +38,11 @@ services:
       - "3306:3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
+  workspace:
+    build: ./workspace
+    container_name: workspace
+    volumes:
+      - ./www:/var/www
+    networks:
+      - backend
+    tty: true
