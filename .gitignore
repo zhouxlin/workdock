@@ -2,3 +2,5 @@
 .SD_Store
 data/mysql/*
 data/redis/*
+log/nginx/*
+.env
