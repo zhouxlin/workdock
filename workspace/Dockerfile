@@ -21,6 +21,7 @@ RUN wget -O composer-setup.php https://getcomposer.org/installer && \
 ## install node
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
     apt-get install -y nodejs && \
-    apt-get install -y npm
+    apt-get install -y npm && \
+    npm install -g yarn
 
 WORKDIR /var/www/
