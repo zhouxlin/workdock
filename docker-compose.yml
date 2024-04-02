@@ -47,7 +47,7 @@ services:
     build: 
       context: ./workspace
       args: 
-        - PHP_VERSION:${PHP_VERSION}
+        - PHP_VERSION=${PHP_VERSION}
     container_name: workspace
     volumes:
       - ./www:/var/www

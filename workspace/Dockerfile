@@ -1,10 +1,8 @@
 FROM debian:stable
 
-ARG PHP_VERSION
-ENV PHP_VERSION=${PHP_VERSION}
-
 ## install php 
 USER root
+ARG PHP_VERSION
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y apt-transport-https lsb-release ca-certificates wget && \
     wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
