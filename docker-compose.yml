@@ -6,7 +6,7 @@ networks:
 
 services:
   php-fpm: 
-    image: php:fpm
+    image: php:${PHP_VERSION}-fpm
     container_name: php-fpm
     volumes:
       - ./www:/var/www/html
@@ -46,7 +46,10 @@ services:
     volumes:
       - ./data/redis:/data
   workspace:
-    build: ./workspace
+    build: 
+      context: ./workspace
+      args: 
+        - PHP_VERSION:${PHP_VERSION}
     container_name: workspace
     volumes:
       - ./www:/var/www
