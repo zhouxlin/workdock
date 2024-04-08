@@ -12,9 +12,10 @@ RUN apt-get update && apt-get upgrade -y && \
     apt install -y php${PHP_VERSION}-mysql php${PHP_VERSION}-cli php${PHP_VERSION}-common php${PHP_VERSION}-imap php${PHP_VERSION}-ldap php${PHP_VERSION}-xml php${PHP_VERSION}-curl php${PHP_VERSION}-mbstring php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-bz2 php${PHP_VERSION}-gd php${PHP_VERSION}-intl
 
 # install composer
-RUN wget -O composer-setup.php https://getcomposer.org/installer && \
-    php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
-    chmod +x /usr/local/bin/composer
+COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
+# RUN wget -O composer-setup.php https://getcomposer.org/installer && \
+#     php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
+#     chmod +x /usr/local/bin/composer
 # install certbot
 
 # install supervisor
