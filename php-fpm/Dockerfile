@@ -5,3 +5,8 @@ FROM php:${PHP_VERSION}-fpm
 # ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 RUN install-php-extensions pdo_mysql
+
+# install composer
+COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
+
+WORKDIR /var/www
