@@ -13,9 +13,7 @@ RUN apt-get update && apt-get upgrade -y && \
 
 # install composer
 COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
-# RUN wget -O composer-setup.php https://getcomposer.org/installer && \
-#     php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
-#     chmod +x /usr/local/bin/composer
+
 # install certbot
 
 # install supervisor
