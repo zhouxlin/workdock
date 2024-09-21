@@ -1,5 +1,5 @@
 .idea
-.SD_Store
+.DS_Store
 data/mysql/*
 data/redis/*
 log/nginx/*

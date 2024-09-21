@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM ${IMAGE_ARCH}debian:stable
 
 ## install php 
 USER root
