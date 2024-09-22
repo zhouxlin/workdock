@@ -1,4 +1,4 @@
-FROM ${IMAGE_ARCH}debian:stable
+FROM debian:stable
 
 ## install php 
 USER root
@@ -23,5 +23,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
     apt-get install -y nodejs && \
     apt-get install -y npm && \
     npm install -g yarn
+
+EXPOSE 5173
 
 WORKDIR /var/www/

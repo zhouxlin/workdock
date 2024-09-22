@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM ${IMAGE_ARCH}php:${PHP_VERSION}-fpm
+FROM php:${PHP_VERSION}-fpm
 
 
 RUN apt-get update && apt-get install -y \
