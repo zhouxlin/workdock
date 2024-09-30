@@ -19,10 +19,12 @@ COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
 # install supervisor
 
 ## install node
-RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
-    apt-get install -y nodejs && \
-    apt-get install -y npm && \
+RUN wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh -O nvm-install.sh && \
+    bash nvm-install.sh && \
+    . ~/.bashrc && \
+    nvm install 20 && \
     npm install -g yarn
+
 
 EXPOSE 5173
 
