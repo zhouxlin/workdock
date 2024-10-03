@@ -43,10 +43,14 @@ services:
       MYSQL_ROOT_PASSWORD: root
     expose:
       - "3306"
+    ports:
+      - "3306:3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
     networks:
       - backend
+
   redis:
     image: redis:latest
     container_name: redis

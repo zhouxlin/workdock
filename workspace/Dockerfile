@@ -9,7 +9,9 @@ RUN apt-get update && apt-get upgrade -y && \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list && \
     apt update && \
     apt install -y php${PHP_VERSION} && \
-    apt install -y php${PHP_VERSION}-mysql php${PHP_VERSION}-cli php${PHP_VERSION}-common php${PHP_VERSION}-imap php${PHP_VERSION}-ldap php${PHP_VERSION}-xml php${PHP_VERSION}-curl php${PHP_VERSION}-mbstring php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-bz2 php${PHP_VERSION}-gd php${PHP_VERSION}-intl
+    apt install -y php${PHP_VERSION}-mysql php${PHP_VERSION}-cli php${PHP_VERSION}-common php${PHP_VERSION}-imap \ 
+        php${PHP_VERSION}-ldap php${PHP_VERSION}-xml php${PHP_VERSION}-curl php${PHP_VERSION}-mbstring php${PHP_VERSION}-zip \
+        php${PHP_VERSION}-bcmath php${PHP_VERSION}-bz2 php${PHP_VERSION}-gd php${PHP_VERSION}-intl php${PHP_VERSION}-sqlite3
 
 # install composer
 COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
