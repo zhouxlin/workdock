@@ -50,6 +50,16 @@ services:
       - ./mysql/conf.d:/etc/mysql/conf.d
     networks:
       - backend
+  
+  pgsql:
+    image: postgres:17-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ./data/pgsql:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
   redis:
     image: redis:latest
