@@ -40,7 +40,7 @@ services:
     container_name: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     expose:
       - "3306"
     ports:
@@ -48,6 +48,7 @@ services:
     volumes:
       - ./data/mysql:/var/lib/mysql
       - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/sql:/docker-entrypoint-initdb.d
     networks:
       - backend
   
@@ -55,7 +56,7 @@ services:
     image: postgres:17-alpine
     restart: always
     environment:
-      POSTGRES_PASSWORD: root
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./data/pgsql:/var/lib/postgresql/data
     ports:
