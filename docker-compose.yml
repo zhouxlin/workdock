@@ -18,7 +18,6 @@ services:
       - nginx
     networks:
       - backend
-    
 
   nginx:
     image: nginx:latest
@@ -84,4 +83,21 @@ services:
     networks:
       - backend
     tty: true
-   
+
+  supervisor:
+    build:
+      context: ./supervisor 
+      args:
+        - PHP_VERSION=${PHP_VERSION}
+    container_name: supervisor
+    restart: always
+    volumes:
+      - ./www:/var/www
+      - ./supervisor/conf.d:/etc/supervisor/conf.d
+      - ./supervisor/supervisord.conf:/etc/supervisord.conf
+      - ./log/supervisor:/var/log/supervisor
+    depends_on:
+      - php-fpm
+    networks:
+      - backend
+        

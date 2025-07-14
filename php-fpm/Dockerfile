@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
     zip \ 
     sqlite3 \
     # && docker-php-ext-configure zip --with-libzip \
-    && docker-php-ext-install pdo_mysql zip
-
+    && docker-php-ext-install pdo_mysql zip 
+    
 # install composer
 COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
 

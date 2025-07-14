@@ -1,0 +1,1008 @@
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (pixelix_cache_illuminate:queue:restart))
+
+  at pixelix/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  pixelix/artisan:16
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
