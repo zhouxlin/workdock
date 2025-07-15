@@ -9,13 +9,16 @@ RUN apt-get update && apt-get install -y \
     # && docker-php-ext-configure zip --with-libzip \
     && docker-php-ext-install pdo_mysql zip 
 
+RUN useradd -r -u 1000 -g www-data www-data || true
+
 # 安装 Supervisor
 # 注意：这里我们同时安装了 Supervisor，并且创建了日志目录和日志文件
 RUN apt-get update && apt-get install -y \
     supervisor \
     && mkdir -p /var/log/supervisor \
-    && touch /var/log/supervisor/supervisord.log 
-
+    && touch /var/log/supervisor/supervisord.log \
+    && chown -R www-data:www-data /var/log/supervisor \
+    && chmod -R 775 /var/log/supervisor
 
 RUN useradd -r -u 1000 -g www-data www-data || true
     
