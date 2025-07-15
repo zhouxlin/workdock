@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y \
     supervisor \
     && mkdir -p /var/log/supervisor \
-    && touch /var/log/supervisor/schedule.log \
-    && touch /var/log/supervisor/queue.log
+    && touch /var/log/supervisor/supervisord.log 
 
 
 RUN useradd -r -u 1000 -g www-data www-data || true
