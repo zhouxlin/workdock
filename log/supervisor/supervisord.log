@@ -1,0 +1,17 @@
+2025-07-15 03:09:58,818 INFO Included extra file "/etc/supervisor/conf.d/pixelix-schedule.conf" during parsing
+2025-07-15 03:09:58,818 INFO Included extra file "/etc/supervisor/conf.d/pixelix-worker.conf" during parsing
+2025-07-15 03:09:58,818 INFO Set uid to user 0 succeeded
+2025-07-15 03:09:58,823 INFO RPC interface 'supervisor' initialized
+2025-07-15 03:09:58,823 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-07-15 03:09:58,823 INFO supervisord started with pid 1
+2025-07-15 03:09:59,834 INFO spawned: 'pixelix-queue_00' with pid 7
+2025-07-15 03:09:59,838 INFO spawned: 'pixelix-queue_01' with pid 8
+2025-07-15 03:09:59,840 INFO spawned: 'pixelix-schedule_00' with pid 9
+2025-07-15 03:10:00,556 INFO success: pixelix-queue_00 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-07-15 03:10:00,557 INFO success: pixelix-queue_01 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-07-15 03:10:00,557 INFO success: pixelix-schedule_00 entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2025-07-15 03:10:28,861 WARN received SIGTERM indicating exit request
+2025-07-15 03:10:28,864 INFO waiting for pixelix-queue_00, pixelix-queue_01, pixelix-schedule_00 to die
+2025-07-15 03:10:29,876 WARN stopped: pixelix-schedule_00 (terminated by SIGTERM)
+2025-07-15 03:10:30,885 WARN stopped: pixelix-queue_00 (terminated by SIGTERM)
+2025-07-15 03:10:30,885 WARN stopped: pixelix-queue_01 (terminated by SIGTERM)

@@ -94,7 +94,7 @@ services:
     volumes:
       - ./www:/var/www
       - ./supervisor/conf.d:/etc/supervisor/conf.d
-      - ./supervisor/supervisord.conf:/etc/supervisord.conf
+      - ./supervisor/supervisord.conf:/etc/supervisor/supervisord.conf
       - ./log/supervisor:/var/log/supervisor
     depends_on:
       - php-fpm
