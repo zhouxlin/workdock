@@ -12,7 +12,6 @@ services:
     restart: always
     volumes:
       - ./www:/var/www/
-      - ./php-fpm/cron.d/laravel-schedule:/etc/cron.d/laravel-schedule
     expose:
       - "9000"
     depends_on:
@@ -97,8 +96,6 @@ services:
       - ./supervisor/conf.d:/etc/supervisor/conf.d
       - ./supervisor/supervisord.conf:/etc/supervisor/supervisord.conf
       - ./log/supervisor:/var/log/supervisor
-    depends_on:
-      - php-fpm
     networks:
       - backend
         
