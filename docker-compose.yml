@@ -12,6 +12,7 @@ services:
     restart: always
     volumes:
       - ./www:/var/www/
+      - ./php-fpm/cron.d/laravel-schedule:/etc/cron.d/laravel-schedule
     expose:
       - "9000"
     depends_on:
