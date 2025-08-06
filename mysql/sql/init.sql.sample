@@ -1,0 +1,15 @@
+-- 创建数据库 (如果不存在)
+-- CREATE DATABASE IF NOT EXISTS my_app_db;
+
+-- 创建用户 (如果不存在)
+-- CREATE USER IF NOT EXISTS 'app_user'@'localhost' IDENTIFIED BY 'app_password';
+
+-- 授予用户对数据库的权限
+-- GRANT ALL PRIVILEGES ON my_app_db.* TO 'app_user'@'localhost';
+
+-- 创建另一个用户 (如果不存在)
+-- CREATE USER IF NOT EXISTS 'readonly_user'@'%' IDENTIFIED BY 'readonly_secret';
+-- GRANT SELECT ON my_app_db.* TO 'readonly_user'@'%';
+
+-- 刷新权限
+-- FLUSH PRIVILEGES;
