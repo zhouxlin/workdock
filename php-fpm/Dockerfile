@@ -29,7 +29,7 @@ RUN set -eux; \
     rm -rf /var/cache/apk/*
 
 # install composer
-COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
+# COPY --from=composer/composer:latest-bin /composer /usr/local/bin/composer
 
 CMD ["php-fpm"]
 WORKDIR /var/www
