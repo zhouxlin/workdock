@@ -4,6 +4,7 @@ FROM php:${PHP_VERSION}-fpm-alpine
 
 # 1. 使用 apk 替换 apt-get，并安装 PHP 扩展所需的依赖
 # 将所有操作放在一个 RUN 命令中，确保在清理构建依赖后，最终镜像尽可能小。
+RUN sed -i 's|https://|http://|g' /etc/apk/repositories
 RUN set -eux; \
     # 临时安装构建依赖 (build-deps)
     apk update; \
