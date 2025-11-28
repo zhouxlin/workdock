@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     zip \ 
     sqlite3 \
     # && docker-php-ext-configure zip --with-libzip \
-    && docker-php-ext-install pdo_mysql zip 
+    && docker-php-ext-install pdo_mysql zip mysqli
 
 # 安装 Supervisor
 # 注意：这里我们同时安装了 Supervisor，并且创建了日志目录和日志文件
