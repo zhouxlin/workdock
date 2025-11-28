@@ -12,6 +12,9 @@ RUN set -eux; \
         $PHPIZE_DEPS \
         mariadb-connector-c-dev \
         libzip-dev \
+        icu-dev \
+        libpng-dev \
+        libjpeg-turbo-dev \
     ; \
     \
     # 安装运行时所需的工具包
@@ -22,7 +25,7 @@ RUN set -eux; \
     \
     # 安装 PHP 扩展 (依赖于上面的 -dev 包)
     # && docker-php-ext-configure zip --with-libzip \
-    docker-php-ext-install pdo_mysql zip mysqli; \
+    docker-php-ext-install pdo_mysql zip mysqli intl gd; \
     \
     # 清理构建依赖和缓存，这是 Alpine 镜像保持精简的关键
     apk del .build-deps; \
