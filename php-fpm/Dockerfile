@@ -15,6 +15,7 @@ RUN set -eux; \
         icu-dev \
         libpng-dev \
         libjpeg-turbo-dev \
+        freetype-dev \
     ; \
     \
     # 安装运行时所需的工具包
@@ -24,9 +25,13 @@ RUN set -eux; \
     ; \
     \
     # 安装 PHP 扩展 (依赖于上面的 -dev 包)
-    # && docker-php-ext-configure zip --with-libzip \
-    docker-php-ext-install pdo_mysql zip mysqli intl gd; \
+    # docker-php-ext-configure zip --with-libzip \
+    docker-php-ext-install pdo_mysql zip mysqli intl; \
     \
+    # 4. 配置并安装 GD 扩展 (修复 GD 缺失的错误)
+    # 必须显式配置对 FreeType (字体) 和 JPEG (图片) 的支持
+    docker-php-ext-configure gd --with-freetype --with-jpeg; \
+    docker-php-ext-install gd; \
     # 清理构建依赖和缓存，这是 Alpine 镜像保持精简的关键
     apk del .build-deps; \
     rm -rf /var/cache/apk/*
