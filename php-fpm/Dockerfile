@@ -22,6 +22,11 @@ RUN set -eux; \
     apk add --no-cache \
         zip \
         sqlite \
+        libzip \
+        icu-libs \
+        libpng \
+        libjpeg-turbo \
+        freetype \
     ; \
     \
     # 安装 PHP 扩展 (依赖于上面的 -dev 包)
