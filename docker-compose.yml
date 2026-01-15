@@ -5,9 +5,16 @@ networks:
 services:
   php-fpm: 
     build: 
-      context: ./php-fpm
+      context: .
+      dockerfile: docker/Dockerfile
+      target: php-fpm
       args:
         - PHP_VERSION=${PHP_VERSION}
+        - INSTALL_BZ2=${INSTALL_BZ2}
+        - INSTALL_GD=${INSTALL_GD}
+        - INSTALL_LDAP=${INSTALL_LDAP}
+        - INSTALL_PGSQL=${INSTALL_PGSQL}
+        - INSTALL_REDIS=${INSTALL_REDIS}
     container_name: php-fpm
     restart: always
     volumes:
@@ -71,9 +78,17 @@ services:
   
   workspace:
     build: 
-      context: ./workspace
+      context: .
+      dockerfile: docker/Dockerfile
+      target: workspace
       args: 
         - PHP_VERSION=${PHP_VERSION}
+        - NODE_VERSION=${NODE_VERSION}
+        - INSTALL_BZ2=${INSTALL_BZ2}
+        - INSTALL_GD=${INSTALL_GD}
+        - INSTALL_LDAP=${INSTALL_LDAP}
+        - INSTALL_PGSQL=${INSTALL_PGSQL}
+        - INSTALL_REDIS=${INSTALL_REDIS}
     container_name: workspace
     ports:
       - "5173:5173"
@@ -85,9 +100,16 @@ services:
 
   supervisor:
     build:
-      context: ./supervisor 
+      context: .
+      dockerfile: docker/Dockerfile
+      target: supervisor
       args:
         - PHP_VERSION=${PHP_VERSION}
+        - INSTALL_BZ2=${INSTALL_BZ2}
+        - INSTALL_GD=${INSTALL_GD}
+        - INSTALL_LDAP=${INSTALL_LDAP}
+        - INSTALL_PGSQL=${INSTALL_PGSQL}
+        - INSTALL_REDIS=${INSTALL_REDIS}
     container_name: supervisor
     restart: always
     volumes:
@@ -97,4 +119,3 @@ services:
       - ./log/supervisor:/var/log/supervisor
     networks:
       - backend
-        
