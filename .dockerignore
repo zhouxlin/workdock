@@ -1,2 +1,43 @@
-.idea
+# Git
+.git
 .gitignore
+.gitattributes
+
+# IDEs, Editors & OS Files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment variables
+# We do not want to accidentally bake sensitive configuration into the image if someone adds a COPY command later.
+.env
+.env.backup
+.env.production
+.env.local
+
+# Data, Logs & Project Code
+# -------------------------------------------------------------------------
+# In this specific project, all services (php-fpm, workspace, supervisor) 
+# use 'context: .' but the Dockerfile DOES NOT use the 'COPY' command to 
+# copy these files into the image. They are instead mounted as volumes 
+# at runtime in docker-compose.yml.
+# Ignoring them here prevents the Docker CLI from needlessly sending 
+# gigabytes of code and database files to the Docker daemon build context, 
+# which drastically speeds up the 'docker-compose build' step.
+# -------------------------------------------------------------------------
+/data/
+/log/
+/.log/
+/www/
+/mysql/
+/nginx/
+/supervisor/
+/php-fpm/
+/workspace/
+
+# Markdown/Docs
+*.md
+!README.md
