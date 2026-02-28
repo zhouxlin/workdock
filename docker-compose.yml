@@ -15,6 +15,7 @@ services:
         - INSTALL_LDAP=${INSTALL_LDAP}
         - INSTALL_PGSQL=${INSTALL_PGSQL}
         - INSTALL_REDIS=${INSTALL_REDIS}
+        - CHANGE_SOURCE=${CHANGE_SOURCE}
     container_name: php-fpm
     restart: always
     volumes:
@@ -91,6 +92,7 @@ services:
         - INSTALL_LDAP=${INSTALL_LDAP}
         - INSTALL_PGSQL=${INSTALL_PGSQL}
         - INSTALL_REDIS=${INSTALL_REDIS}
+        - CHANGE_SOURCE=${CHANGE_SOURCE}
     container_name: workspace
     ports:
       - "5173:5173"
@@ -112,6 +114,7 @@ services:
         - INSTALL_LDAP=${INSTALL_LDAP}
         - INSTALL_PGSQL=${INSTALL_PGSQL}
         - INSTALL_REDIS=${INSTALL_REDIS}
+        - CHANGE_SOURCE=${CHANGE_SOURCE}
     container_name: supervisor
     restart: always
     volumes:

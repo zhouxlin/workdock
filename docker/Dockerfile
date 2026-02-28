@@ -12,8 +12,12 @@ ARG INSTALL_LDAP=false
 ARG INSTALL_PGSQL=false
 ARG INSTALL_REDIS=false
 
-# Replace Alpine package repositories with Aliyun mirror to prevent network timeouts
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+ARG CHANGE_SOURCE=false
+
+# Replace Alpine package repositories with Aliyun mirror if CHANGE_SOURCE is true
+RUN if [ "$CHANGE_SOURCE" = "true" ]; then \
+    sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories; \
+    fi \
     && apk update && apk add --no-cache \
     git \
     curl \
@@ -82,7 +86,10 @@ CMD ["php-fpm"]
 # ======================================================================================================================
 FROM base AS supervisor
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+ARG CHANGE_SOURCE
+RUN if [ "$CHANGE_SOURCE" = "true" ]; then \
+    sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories; \
+    fi \
     && apk update && apk add --no-cache supervisor \
     && mkdir -p /var/log/supervisor \
     && mkdir -p /var/run/supervisor
@@ -99,8 +106,12 @@ ARG NODE_VERSION
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
+ARG CHANGE_SOURCE
+
 # Install Node.js
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+RUN if [ "$CHANGE_SOURCE" = "true" ]; then \
+    sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories; \
+    fi \
     && apk update && apk add --no-cache nodejs npm yarn
 
 EXPOSE 5173
