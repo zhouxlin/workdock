@@ -4,7 +4,7 @@ ARG NODE_VERSION=20
 # ======================================================================================================================
 #  BASE STAGE
 # ======================================================================================================================
-FROM php:${PHP_VERSION}-fpm AS base
+FROM php:${PHP_VERSION}-fpm-alpine AS base
 
 ARG INSTALL_BZ2=false
 ARG INSTALL_GD=false
@@ -13,55 +13,57 @@ ARG INSTALL_PGSQL=false
 ARG INSTALL_REDIS=false
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add --no-cache \
     git \
     curl \
     gnupg \
     ca-certificates \
     libpng-dev \
-    libonig-dev \
+    oniguruma-dev \
     libxml2-dev \
     zip \
     unzip \
     libzip-dev \
-    libicu-dev \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libldap2-dev \
-    libbz2-dev \
-    sqlite3 \
-    libsqlite3-dev \
-    default-mysql-client \
+    icu-dev \
+    freetype-dev \
+    libjpeg-turbo-dev \
+    openldap-dev \
+    bzip2-dev \
+    sqlite \
+    sqlite-dev \
+    mysql-client \
     vim \
-    $( [ "$INSTALL_PGSQL" = "true" ] && echo "libpq-dev" ) \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    bash \
+    linux-headers \
+    $PHPIZE_DEPS \
+    $( [ "$INSTALL_PGSQL" = "true" ] && echo "postgresql-dev" )
 
 # Configure and install PHP extensions
 RUN docker-php-ext-install \
-        pdo_mysql \
-        mysqli \
-        zip \
-        intl \
-        bcmath \
-        pcntl \
-        opcache \
+    pdo_mysql \
+    mysqli \
+    zip \
+    intl \
+    bcmath \
+    pcntl \
+    opcache \
     && if [ "$INSTALL_BZ2" = "true" ]; then \
-        docker-php-ext-install bz2; \
+    docker-php-ext-install bz2; \
     fi \
     && if [ "$INSTALL_GD" = "true" ]; then \
-        docker-php-ext-configure gd --with-freetype --with-jpeg \
-        && docker-php-ext-install gd; \
+    docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd; \
     fi \
     && if [ "$INSTALL_LDAP" = "true" ]; then \
-        docker-php-ext-configure ldap \
-        && docker-php-ext-install ldap; \
+    docker-php-ext-configure ldap \
+    && docker-php-ext-install ldap; \
     fi \
     && if [ "$INSTALL_PGSQL" = "true" ]; then \
-        docker-php-ext-install pdo_pgsql; \
+    docker-php-ext-install pdo_pgsql; \
     fi \
     && if [ "$INSTALL_REDIS" = "true" ]; then \
-        pecl install redis \
-        && docker-php-ext-enable redis; \
+    pecl install redis \
+    && docker-php-ext-enable redis; \
     fi
 
 WORKDIR /var/www
@@ -79,8 +81,7 @@ CMD ["php-fpm"]
 # ======================================================================================================================
 FROM base AS supervisor
 
-RUN apt-get update && apt-get install -y supervisor \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+RUN apk update && apk add --no-cache supervisor \
     && mkdir -p /var/log/supervisor \
     && mkdir -p /var/run/supervisor
 
@@ -97,9 +98,6 @@ ARG NODE_VERSION
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 # Install Node.js
-RUN curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g yarn \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apk update && apk add --no-cache nodejs npm yarn
 
 EXPOSE 5173
