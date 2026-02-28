@@ -12,8 +12,9 @@ ARG INSTALL_LDAP=false
 ARG INSTALL_PGSQL=false
 ARG INSTALL_REDIS=false
 
-# Install system dependencies
-RUN apk update && apk add --no-cache \
+# Replace Alpine package repositories with Aliyun mirror to prevent network timeouts
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+    && apk update && apk add --no-cache \
     git \
     curl \
     gnupg \
@@ -81,7 +82,8 @@ CMD ["php-fpm"]
 # ======================================================================================================================
 FROM base AS supervisor
 
-RUN apk update && apk add --no-cache supervisor \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+    && apk update && apk add --no-cache supervisor \
     && mkdir -p /var/log/supervisor \
     && mkdir -p /var/run/supervisor
 
@@ -98,6 +100,7 @@ ARG NODE_VERSION
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 # Install Node.js
-RUN apk update && apk add --no-cache nodejs npm yarn
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+    && apk update && apk add --no-cache nodejs npm yarn
 
 EXPOSE 5173
