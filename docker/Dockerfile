@@ -94,7 +94,7 @@ RUN if [ "$CHANGE_SOURCE" = "true" ]; then \
     && mkdir -p /var/log/supervisor \
     && mkdir -p /var/run/supervisor
 
-CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
 
 # ======================================================================================================================
 #  WORKSPACE STAGE
